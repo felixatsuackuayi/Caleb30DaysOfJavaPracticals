@@ -126,9 +126,26 @@
     NB: The end part (.DS_Store) you add ("> .gitignore)
 
  9. You can type (ls -a) to check the directory
- 10.You can type (less .gitignore) to see some of the content of it
+ 10.You can type (less .gitignore) to see some of the content of the gitignore
  11. When you want to come out of the folder of .gitignore type (Shift+:) and q
- 12.You can check status again (git status)
- 13. Now we need to make a commit but before that we can remove all other FOLDERS(provided those folders are not important,otherwise leave them)
+ 12. You can type (ls -a) to know the structure of your current directory
+ 13. You can type (less .gitignore) to inspect the content of your gitignore file
+ 14. You can check status again (git status)
+ 15. You can stage your current files by typing (git add.)
+ 16. check status (git status)
+ 17.  You can delete any unwanted files from your project folder manually or use(rm -r [folder/file name])
+ 18.After deletion, come back to stage (git add .)
+ 19. Check status
+ 20. Now commit (git commit -m "initial commit)"
+ 21. check  ( git status)
+ 22. git log
+ 23. At this point you can add your github repository to your local repository by copying this command from your github account
+ -git remote add origin https://github.com/felixatsuackuayi/Caleb30DaysOfJavaPracticals.git
+ (enter and paste the below)
+ -git branch -M master
+  - git push -u origin master
+  -You may have github window opened to login your github credential
+ 24. Now go to your github account and refresh.
+ Now we need to make a commit but before that we can remove all other FOLDERS(provided those folders are not important,otherwise leave them)
  - to remove type (EX: rm -r testing) ..testing is the folder name
  14.Now commit to git by typing (git add .)
