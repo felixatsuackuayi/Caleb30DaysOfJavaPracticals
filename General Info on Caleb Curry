@@ -1,0 +1,134 @@
+1. Go to your Github account (https://github.com/)
+2. Click on the dropdown close to your profile
+-click on Create New Repository
+-Give it a name (EX:30DaysOf)
+-NB: Dont check the Initialise this repository with README.WE WILL PUSH IT to github from local machine
+   (ignore Add .gitignore, choose license)
+-Click on Create Repository button to complete
+3. Once we have the project ready on github we use the command
+-git remote add origin https://github.com/felixatsuackuayi/Caleb30DaysOfJavaPracticals.git
+-git branch -M master
+-git push -u origin master
+
+4.   If you using MacBook and you encounter an error by entering (git) in your Mac Terminal use this to resole
+- xcode-select --install
+5. Now you can type (git)
+6. Now we have to go into our directory
+-go to where your project directory is sitting on your local drive c(/IdeaProjects/JavaBasic/src/com/calebcurryYoutube)
+ or Windows Terminal Type: cd \Users\fackuayi\IdeaProjects\JavaBasic\src\com (example)
+
+-Go to the source folder of project -> right click and select open with terminal
+ enter (dir: for windows & pwd:for MAC OR LINUX) to check FOLDER STRUCTURE
+- Or click the root link of the main directory that contain your entire projects folders and render your (git init) in it
+7. Type: (git init) in the Folder which contains your project: which means initialised empty Git
+- You change directory into C:\Users\fackuayi\IdeaProjects\JavaBasic\src\com\calebcurryYoutube
+
+8. Check your git status (TYPE: git status)
+    NOTE: It will show all Files in the project Folder where you (initialised your git)
+    -We can also use (git ignore) to ignore all other folders in the main Root Directory
+    -Go to google and type (Java gitignore) https://gist.github.com/dedunumax/54e82214715e35439227
+
+    NOTE: (git ignore) is mostly done to ignore files that you do not want to (STAGE) & (COMMIT) them to github.
+    -STAGING means (git add .)
+    -COMMIT meand ( git commit -m "")
+    -In case you mistakenly stage, files that you have not made any changes into or files that you do not want to PUSH to GITHUB Repo,
+     you can still apply the ignore command but, but those ignore files will only take effect in your next stage and commit.
+
+    - Copy the below
+    echo "##############################
+    ## Java
+    ##############################
+    .mtj.tmp/
+    *.class
+    *.jar
+    *.war
+    *.ear
+    *.nar
+    hs_err_pid*
+
+    ##############################
+    ## Maven
+    ##############################
+    target/
+    pom.xml.tag
+    pom.xml.releaseBackup
+    pom.xml.versionsBackup
+    pom.xml.next
+    pom.xml.bak
+    release.properties
+    dependency-reduced-pom.xml
+    buildNumber.properties
+    .mvn/timing.properties
+    .mvn/wrapper/maven-wrapper.jar
+
+    ##############################
+    ## Gradle
+    ##############################
+    bin/
+    build/
+    .gradle
+    .gradletasknamecache
+    gradle-app.setting
+    !gradle-wrapper.jar
+    bash: !gradle: event not found
+
+    ##############################
+    ## IntelliJ
+    ##############################
+    out/
+    .idea/
+    .idea_modules/
+    *.iml
+    *.ipr
+    *.iws
+
+    ##############################
+    ## Eclipse
+    ##############################
+    .settings/
+    bin/
+    tmp/
+    .metadata
+    .classpath
+    .project
+    *.tmp
+    *.bak
+    *.swp
+    *~.nib
+    local.properties
+    .loadpath
+    .factorypath
+
+    ##############################
+    ## NetBeans
+    ##############################
+    nbproject/private/
+    build/
+    nbbuild/
+    dist/
+    nbdist/
+    nbactions.xml
+    nb-configuration.xml
+
+    ##############################
+    ## Visual Studio Code
+    ##############################
+    .vscode/
+    .code-workspace
+
+    ##############################
+    ## OS X
+    ##############################
+    .DS_Store
+    " > .gitignore
+
+
+    NB: The end part (.DS_Store) you add ("> .gitignore)
+
+ 9. You can type (ls -a) to check the directory
+ 10.You can type (less .gitignore) to see some of the content of it
+ 11. When you want to come out of the folder of .gitignore type (Shift+:) and q
+ 12.You can check status again (git status)
+ 13. Now we need to make a commit but before that we can remove all other FOLDERS(provided those folders are not important,otherwise leave them)
+ - to remove type (EX: rm -r testing) ..testing is the folder name
+ 14.Now commit to git by typing (git add .)
